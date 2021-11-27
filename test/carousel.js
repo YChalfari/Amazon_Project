@@ -104,14 +104,19 @@ const leftBtn = document.querySelector(".btn-left");
 rightBtn.addEventListener("click", () => {
   for (i = 4; i >= 0; i--) {
     let oldItem = caruItems[i];
-    let lastPos = parseInt(caruItems[i].getAttribute("aria-posinset"));
-    let newItem = featuredItems[lastPos + -1];
+    let lastPos = parseInt(oldItem.getAttribute("aria-posinset"));
+    let newItem = featuredItems[lastPos + 4];
+    console.log(
+      i,
+      oldItem.getAttribute("aria-posinset"),
+      lastPos,
+      newItem.posInSet
+    );
     oldItem.setAttribute("aria-posinset", `${newItem.posInSet}`);
     oldItem.innerHTML = `${newItem.posInSet}`;
-
-    console.log(i, oldItem, lastPos, newItem);
   }
 });
+
 leftBtn.addEventListener("click", () => {
   if (caruItems[0].getAttribute("aria-posinset") > 1) {
     for (i = 4; i >= 0; i--) {
@@ -125,5 +130,3 @@ leftBtn.addEventListener("click", () => {
     }
   }
 });
-
-console.log(9 / 2 - (-1 - 1));
