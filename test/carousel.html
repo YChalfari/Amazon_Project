@@ -9,80 +9,8 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
     />
-
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      /* Carousel Layout */
-      .flex-row {
-        display: flex;
-      }
-      .flex-col {
-        display: flex;
-        flex-direction: column;
-      }
-      .caru-head-wrap {
-        margin: 10px auto;
-        height: 200px;
-        width: 90%;
-        align-items: center;
-        justify-content: space-between;
-      }
-      .caru-flex-wrap {
-        margin: 5px auto;
-        width: 90%;
-        padding: 0 15px;
-      }
-      .caru-items {
-        padding: 0 10px;
-        justify-content: center;
-        flex: 1;
-        list-style: none;
-        height: 386px;
-        background-color: lightgreen;
-      }
-
-      .caru-item {
-        
-        background-color: lightcoral;
-        width: 160px;
-        margin-right: 35px;
-        text-decoration: none;
-        color: inherit;
-      }
-      .caru-item:last-of-type {
-        margin-right: 0;
-      }
-      a {
-        text-decoration: none;
-        color: black;
-      }
-      .caru-btn-wrap,
-      .caru-btn {
-        align-items: center;
-        justify-content: center;
-      }
-      .caru-btn {
-        height: 45px;
-        width: 45px;
-        border-radius: 8px;
-        background-color: grey;
-      }
-      @media (max-width: 1080px) {
-        .caru-item:last-of-type {
-          display: none;
-        }
-      }
-
-      @media (max-width: 850px) {
-        .caru-item:nth-of-type(4) {
-          display: none;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="../styles/utilities.css">
+    <link rel="stylesheet" href="../styles/style.css">
   </head>
   <body>
     <section class="carousel-sec">
@@ -90,8 +18,8 @@
         <h3 class="caru-title">Featured items you may like</h3>
         <div class="pages-wrap">
           <p>
-            Page <span class="cur-page">1</span>of<span class="num-of-pages"
-              >6</span
+            Page <span class="cur-page"> 1</span> of<span class="num-of-pages"
+              > 6</span
             >
           </p>
         </div>
@@ -100,42 +28,44 @@
         <div class="caru-btn-wrap btn-col flex-row">
           <div class="btn-left">
             <i class="caru-btn fas fa-chevron-left flex-row"></i>
-          </div>        </div>
+          </div>
+        </div>
         <ol class="caru-items flex-row">
           <li aria-posinset="1" class="caru-item flex-col">
             <img src="" alt="" class="card-img">
             <div class="card-text-wrap">
-              <a href="" class="under-link"></a>
-              <div class="card-rating-wrap"><span class="rating-span"><img src="" alt="" class="rating"></span></div>
-            </div>  
+              <a href="" class="under-link card-title"> ''</a>
+              <div class="card-rating-wrap"><span class="rating-span"><img src="" alt="" class="rating"><span class="numOfRatings"></span></span></div>
+              <h3 class="price card-price"></h3><p class="shipping-card"></p></div>  
           </li>
           <li aria-posinset="2" class="caru-item flex-col">
             <img src="" alt="" class="card-img">
             <div class="card-text-wrap">
-              <a href="" class="under-link"></a>
-              <div class="card-rating-wrap"><span class="rating-span"><img src="" alt="" class="rating"></span></div>
-            </div>  
+              <a href="" class="under-link card-title"> ''</a>
+              <div class="card-rating-wrap"><span class="rating-span"><img src="" alt="" class="rating"><span class="numOfRatings"></span></span></div>
+              <h3 class="price card-price"></h3><p class="shipping-card"></p></div>  
           </li>
           <li aria-posinset="3" class="caru-item flex-col">
             <img src="" alt="" class="card-img">
             <div class="card-text-wrap">
-              <a href="" class="under-link"></a>
-              <div class="card-rating-wrap"><span class="rating-span"><img src="" alt="" class="rating"></span></div>
-            </div>  
+              <a href="" class="under-link card-title"></a>
+              <div class="card-rating-wrap"><span class="rating-span"><img src="" alt="" class="rating"><span class="numOfRatings"></span></span></div>
+              <h3 class="price card-price"></h3><p class="shipping-card"></p></div>  
           </li>
           <li aria-posinset="4" class="caru-item flex-col">
             <img src="" alt="" class="card-img">
             <div class="card-text-wrap">
-              <a href="" class="under-link"></a>
-              <div class="card-rating-wrap"><span class="rating-span"><img src="" alt="" class="rating"></span></div>
-            </div>  
+              <a href="" class="under-link card-title"></a>
+              <div class="card-rating-wrap"><span class="rating-span"><img src="" alt="" class="rating"><span class="numOfRatings"></span></span></div>
+              <h3 class="price card-price"></h3><p class="shipping-card"></p></div>  
           </li>
           <li aria-posinset="5" class="caru-item flex-col">
             <img src="" alt="" class="card-img">
             <div class="card-text-wrap">
-              <a href="" class="under-link"></a>
-              <div class="card-rating-wrap"><span class="rating-span"><img src="" alt="" class="rating"></span></div>
-            </div>  
+              <a href="" class="under-link card-title"></a>
+              <div class="card-rating-wrap"><span class="rating-span"><img src="" alt="" class="rating"> <span class="numOfRatings"></span></span></div>
+              <h3 class="price card-price"></h3>
+              <p class="shipping-card"></p></div>  
           </li>
         </ol>
         <div class="caru-btn-wrap btn-col flex-row">

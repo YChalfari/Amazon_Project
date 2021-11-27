@@ -1,17 +1,17 @@
 const shippingCardInfo =
   "FREE Shipping on orders over $49 shipped by Amazon In stock soon.";
 const ratings = [
-  "../images/icons/ratings/rating-0.png",
-  "../images/icons/ratings/rating-0-5.png",
-  "../images/icons/ratings/rating-1.png",
-  "../images/icons/ratings/rating-1-5.png",
-  "../images/icons/ratings/rating-2.png",
-  "../images/icons/ratings/rating-2-5.png",
-  "../images/icons/ratings/rating-3.png",
-  "../images/icons/ratings/rating-3-5.png",
-  "../images/icons/ratings/rating-4.png",
-  "../images/icons/ratings/rating-4-5.png",
-  "../images/icons/ratings/rating-5.png",
+  "./images/icons/ratings/rating-0.png",
+  "./images/icons/ratings/rating-0-5.png",
+  "./images/icons/ratings/rating-1.png",
+  "./images/icons/ratings/rating-1-5.png",
+  "./images/icons/ratings/rating-2.png",
+  "./images/icons/ratings/rating-2-5.png",
+  "./images/icons/ratings/rating-3.png",
+  "./images/icons/ratings/rating-3-5.png",
+  "./images/icons/ratings/rating-4.png",
+  "./images/icons/ratings/rating-4-5.png",
+  "./images/icons/ratings/rating-5.png",
 ];
 const featuredItems = [
   {
@@ -21,7 +21,7 @@ const featuredItems = [
     rating: "4",
     numOfRatings: "243",
     posInSet: 1,
-    url: "../images/featured/rubber-ducky.jpg",
+    url: "./images/featured/rubber-ducky.jpg",
   },
   {
     title:
@@ -31,7 +31,7 @@ const featuredItems = [
     rating: "4",
     numOfRatings: "101",
     posInSet: 2,
-    url: "../images/featured/airplanes.jpg",
+    url: "./images/featured/airplanes.jpg",
   },
   {
     title: "Pee-Pee Teepee Cars Blue - Cello Bag",
@@ -40,7 +40,7 @@ const featuredItems = [
     rating: "4",
     numOfRatings: "499",
     posInSet: 3,
-    url: "../images/featured/cars.jpg",
+    url: "./images/featured/cars.jpg",
   },
   {
     title: "Pee-Pee Teepee Fishing Blue - Cello Bag",
@@ -49,7 +49,7 @@ const featuredItems = [
     rating: "4",
     numOfRatings: "374",
     posInSet: 4,
-    url: "../images/featured/fishing.jpg",
+    url: "./images/featured/fishing.jpg",
   },
   {
     title: "Beba Bean Pee-Pee Teepee Cellophane Bag - Green",
@@ -58,7 +58,7 @@ const featuredItems = [
     rating: "4",
     numOfRatings: "236",
     posInSet: 5,
-    url: "../images/featured/green-black-camo.jpg",
+    url: "./images/featured/green-black-camo.jpg",
   },
   {
     title: "Beba Bean Pee-pee Teepee Golf Green - Cello Bag, 5 Golf Teepees",
@@ -67,7 +67,7 @@ const featuredItems = [
     rating: "4",
     numOfRatings: "231",
     posInSet: 6,
-    url: "../images/featured/golf.jpg",
+    url: "./images/featured/golf.jpg",
   },
   {
     title:
@@ -77,7 +77,7 @@ const featuredItems = [
     rating: "5",
     numOfRatings: "62",
     posInSet: 7,
-    url: "../images/featured/wild-west.jpg",
+    url: "./images/featured/wild-west.jpg",
   },
   {
     title: "Pee-Pee Teepee Cold Monkey Blue - Cello Bag",
@@ -86,7 +86,7 @@ const featuredItems = [
     rating: "4",
     numOfRatings: "83",
     posInSet: 8,
-    url: "../images/featured/cold-monkey.jpg",
+    url: "./images/featured/cold-monkey.jpg",
   },
   {
     title: "Pee-Pee Teepee Lil Monkey Green - Laundry Bag",
@@ -95,7 +95,7 @@ const featuredItems = [
     rating: "5",
     numOfRatings: "471",
     posInSet: 9,
-    url: "../images/featured/monkey-banana.jpg",
+    url: "./images/featured/monkey-banana.jpg",
   },
   {
     title:
@@ -105,7 +105,7 @@ const featuredItems = [
     rating: "2.5",
     numOfRatings: "2",
     posInSet: 10,
-    url: "../images/featured/traffic-get-out-go.jpg",
+    url: "./images/featured/traffic-get-out-go.jpg",
   },
 ];
 

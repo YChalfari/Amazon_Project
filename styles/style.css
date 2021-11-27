@@ -29,11 +29,22 @@ header a {
   display: grid;
   gap: 10px;
   grid-template-areas:
-    "m m a"
-    "car1 car1 a"
-    "car2 car2 a";
+    "m a"
+    "car1  a";
 }
-
+main {
+  width: 70%;
+}
+aside {
+  grid-area: "a";
+}
+.carousel-sec {
+  max-width: 70vw;
+  grid-area: "car1";
+}
+section {
+  margin-left: 5vw;
+}
 /* Header */
 .top-nav-sprite {
   display: flex;
@@ -205,8 +216,8 @@ header a {
 
 /*  Main  */
 .product-main {
-  width: 75vw;
-  padding: 20px;
+  width: 70vw;
+  padding: 40px;
   flex: 1;
 }
 /* Gallery */
@@ -260,6 +271,16 @@ header a {
 .under-list-item {
   margin: 5px;
 }
+main p,
+main span {
+  line-height: 20px;
+}
+table {
+  text-align: left;
+  border-spacing: 14px;
+}
+th {
+}
 .p-text-wrap {
   width: 355px;
   max-width: 667px;
@@ -289,6 +310,69 @@ header a {
 }
 .stock-status {
   margin: 10px 0;
+}
+
+.wide {
+  width: 70vw;
+}
+/* Carousel */
+
+.caru-head-wrap {
+  margin: 10px auto;
+  height: 60px;
+  width: 70vw;
+  align-items: center;
+  justify-content: space-between;
+}
+.caru-title {
+  color: #cc6600;
+  font-family: verdana, arial;
+}
+.card-price {
+}
+.caru-flex-wrap {
+  margin: 5px auto;
+  max-width: 70vw;
+  padding: 0 15px;
+  margin-bottom: 80px;
+}
+.caru-items {
+  padding: 0 10px;
+  justify-content: center;
+  flex: 1;
+  list-style: none;
+  height: 386px;
+}
+
+.caru-item:last-of-type {
+  margin-right: 0;
+}
+
+.caru-btn-wrap,
+.caru-btn {
+  align-items: center;
+  justify-content: center;
+}
+.caru-btn {
+  margin: 0 10px;
+  height: 39px;
+  width: 36px;
+  border-radius: 8px;
+  border: 1px #d5d9d9 solid;
+  background-color: #fff;
+  position: relative;
+  bottom: 100px;
+}
+.caru-item {
+  width: 160px;
+  margin-right: 35px;
+  text-decoration: none;
+  color: inherit;
+}
+@media (max-width: 1080px) {
+  .caru-item:last-of-type {
+    display: none;
+  }
 }
 
 @media (max-width: 740px) {
