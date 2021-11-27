@@ -1,0 +1,83 @@
+/* Colors and bgs */
+.under-link {
+  color: #007185;
+}
+.text-faded {
+  color: rgb(86 89 89);
+}
+.price {
+  color: #b12704;
+  font-size: 18px;
+  line-height: 24px;
+}
+.section-divider {
+  border-top: 1px #d5d9d9 solid;
+}
+
+/* Flex */
+.flex-row {
+  display: flex;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Icons and Images */
+.arrow-d {
+  content: url("../images/icons/arrow-down.png");
+}
+.rating-4 {
+  content: url("../images/icons/Ratings/rating-4.png");
+}
+.location-small {
+  content: url("../images/icons/location-small.png");
+}
+.location-big {
+  content: url("../images/icons/location-big.png");
+}
+.sprite {
+  margin: 0 5px;
+}
+/* Text */
+
+.bold {
+  font-weight: 500;
+}
+.thin {
+  letter-spacing: 0.3px;
+  font-weight: 550;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 25px;
+  text-align: center;
+  width: 100%;
+  height: 29px;
+  margin: 5px 0;
+  border: none;
+}
+.btn-qty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 20px;
+  box-shadow: 0 0 4px #838383d5;
+}
+.padding-5 {
+  padding: 0 2px 0 7px;
+}
+.btn-yellow {
+  background-color: #ffdb0c;
+}
+.btn-yellow:hover {
+  background-color: #f7ca00;
+}
+.btn-orange {
+  background-color: #fa9819;
+}
+.btn-orange:hover {
+  background-color: #fa7900;
+}
