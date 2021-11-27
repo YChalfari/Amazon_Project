@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      /* Carousel Layout */
+      .flex-row {
+        display: flex;
+      }
+      .flex-col {
+        display: flex;
+        flex-direction: column;
+      }
+      .caru-head-wrap {
+        margin: 10px auto;
+        height: 200px;
+        width: 90%;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .caru-flex-wrap {
+        margin: 5px auto;
+        width: 90%;
+        padding: 0 15px;
+      }
+      .caru-items {
+        padding: 0 10px;
+        justify-content: center;
+        flex: 1;
+        list-style: none;
+        height: 386px;
+        background-color: lightgreen;
+      }
+
+      .caru-item {
+        background-color: lightcoral;
+        width: 160px;
+        margin-right: 35px;
+        text-decoration: none;
+        color: inherit;
+      }
+      .caru-item:last-of-type {
+        margin-right: 0;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      .caru-btn-wrap,
+      .caru-btn {
+        align-items: center;
+        justify-content: center;
+      }
+      .caru-btn {
+        height: 45px;
+        width: 45px;
+        border-radius: 8px;
+        background-color: grey;
+      }
+      @media (max-width: 1080px) {
+        .caru-item:last-of-type {
+          display: none;
+        }
+      }
+
+      @media (max-width: 850px) {
+        .caru-item:nth-of-type(4) {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="carousel-sec">
+      <div class="caru-head-wrap flex-row">
+        <h3 class="caru-title">Featured items you may like</h3>
+        <div class="pages-wrap">
+          <p>
+            Page <span class="cur-page">1</span>of<span class="num-of-pages"
+              >6</span
+            >
+          </p>
+        </div>
+      </div>
+      <div class="caru-flex-wrap flex-row">
+        <div class="caru-btn-wrap btn-col flex-row">
+          <div class="btn-left"></div>
+            <i class="caru-btn fas fa-chevron-left flex-row"></i>
+          </div>
+        </div>
+        <ol class="caru-items flex-row">
+          <li aria-posinset="1" class="caru-item flex-col">
+            
+          </li>
+          <li aria-posinset="2" class="caru-item">02</li>
+          <li aria-posinset="3" class="caru-item">03</li>
+          <li aria-posinset="4" class="caru-item">04</li>
+          <li aria-posinset="5" class="caru-item">05</li>
+        </ol>
+        <div class="caru-btn-wrap btn-col flex-row">
+          <div class="btn-right">
+            <i class="caru-btn flex-row fas fa-chevron-right"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section class="carousel-sec">
+      <div class="caru-head-wrap flex-row">
+        <h3 class="caru-title">Featured items you may like</h3>
+        <div class="pages-wrap">
+          <p>
+            Page <span class="cur-page">1</span>of<span class="num-of-pages"
+              >6</span
+            >
+          </p>
+        </div>
+      </div>
+      <div class="caru-flex-wrap flex-row">
+        <a href="" class="caru-btn-wrap btn-col flex-row"
+          ><i class="caru-btn btn-left fas fa-chevron-left flex-row"></i
+        ></a>
+        <ol class="caru-items flex-row">
+          <li aria-posinset="1" class="caru-item">01</li>
+          <li aria-posinset="2" class="caru-item">02</li>
+          <li aria-posinset="3" class="caru-item">03</li>
+          <li aria-posinset="4" class="caru-item">04</li>
+          <li aria-posinset="5" class="caru-item">05</li>
+          <li aria-posinset="6" class="caru-item">06</li>
+          <li aria-posinset="7" class="caru-item">07</li>
+          <li aria-posinset="8" class="caru-item">08</li>
+          <li aria-posinset="9" class="caru-item">09</li>
+          <li aria-posinset="10" class="caru-item">10</li>
+          <li aria-posinset="11" class="caru-item">11</li>
+          <li aria-posinset="12" class="caru-item">12</li>
+          <li aria-posinset="13" class="caru-item">13</li>
+          <li aria-posinset="14" class="caru-item">14</li>
+          <li aria-posinset="15" class="caru-item">15</li>
+        </ol>
+
+        <a href="" class="caru-btn-wrap btn-col flex-row"
+          ><i class="caru-btn btn-left flex-row fas fa-chevron-right"></i
+        ></a>
+      </div>
+    </section> -->
+    <script src="carousel.js"></script>
+  </body>
+</html>
