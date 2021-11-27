@@ -1,105 +1,114 @@
+const shippingCardInfo =
+  "FREE Shipping on orders over $49 shipped by Amazon In stock soon.";
+
 const featuredItems = [
   {
-    title: "",
+    title: "Pee-pee Teepee Rubber Ducky Blue - Cello Bag",
     description: "",
-    price: "",
-    rating: "",
+    price: "12.95",
+    rating: "4",
+    numOfRatings: "",
     posInSet: 1,
     url: "",
   },
   {
-    title: "",
+    title:
+      "The Peepee Teepee For the Sprinkling  WeeWee: 5 Airplanes in Cellophane Bag",
     description: "",
-    price: "",
-    rating: "",
+    price: "9.95",
+    rating: "4",
+    numOfRatings: "",
     posInSet: 2,
     url: "",
   },
   {
-    title: "",
+    title: "Pee-Pee Teepee Elephant Blue - Cello Bag",
     description: "",
-    price: "",
-    rating: "",
+    price: "12.95",
+    rating: "4",
+    numOfRatings: "499",
     posInSet: 3,
     url: "",
   },
   {
-    title: "",
+    title: "Pee-Pee Teepee Fishing Blue - Cello Bag",
     description: "",
-    price: "",
-    rating: "",
+    price: "9.95",
+    rating: "4",
+    numOfRatings: "374",
     posInSet: 4,
     url: "",
   },
   {
-    title: "",
+    title: "Beba Bean Pee-Pee Teepee Cellophane Bag - Green",
     description: "",
-    price: "",
-    rating: "",
+    price: "11.99",
+    rating: "4",
+    numOfRatings: "236",
     posInSet: 5,
     url: "",
   },
   {
-    title: "",
+    title: "Beba Bean Pee-pee Teepee Golf Green - Cello Bag, 5 Golf Teepees",
     description: "",
-    price: "",
-    rating: "",
+    price: "12.31",
+    rating: "4",
+    numOfRatings: "231",
     posInSet: 6,
     url: "",
   },
   {
-    title: "",
+    title:
+      "The Peepee Teepee for the Sprinkling WeeWee: 5 Wild West in Cellophane Bag",
     description: "",
-    price: "",
-    rating: "",
+    price: "9.95",
+    rating: "4",
+    numOfRatings: "62",
     posInSet: 7,
     url: "",
   },
   {
-    title: "",
+    title: "Pee-Pee Teepee Firedog Blue - Cello Bag",
     description: "",
-    price: "",
-    rating: "",
+    price: "12.95",
+    rating: "4",
+    numOfRatings: "83",
     posInSet: 8,
     url: "",
   },
   {
-    title: "",
+    title: "Pee-Pee Teepee Lil Monkey Green - Laundry Bag",
     description: "",
-    price: "",
-    rating: "",
+    price: "11.95",
+    rating: "4",
+    numOfRatings: "471",
     posInSet: 9,
     url: "",
   },
   {
-    title: "",
+    title:
+      "Nuanchu 5 Pieces Baby Pee Covers with Rubber Band Baby Pee Cover for Boys Soft Newborn Pee Cover Washable Infant Pee Guard E…",
     description: "",
-    price: "",
-    rating: "",
+    price: "16.99",
+    rating: "2-5",
+    numOfRatings: "2",
     posInSet: 10,
     url: "",
   },
 ];
 
 const caruItems = document.querySelectorAll(".caru-item");
-
 const rightBtn = document.querySelector(".btn-right");
 const leftBtn = document.querySelector(".btn-left");
 
-// function changeInner(item, newItem) {
-//   item.setAttribute("aria-posinset", `${newItem.posInSet}`);
-// }
-
 rightBtn.addEventListener("click", () => {
-  let count = 0;
   for (i = 4; i >= 0; i--) {
     let oldItem = caruItems[i];
     let lastPos = parseInt(caruItems[i].getAttribute("aria-posinset"));
-    let newItem = featuredItems[lastPos * 2 + (count - 1)];
-
+    let newItem = featuredItems[lastPos + -1];
     oldItem.setAttribute("aria-posinset", `${newItem.posInSet}`);
     oldItem.innerHTML = `${newItem.posInSet}`;
-    count++;
+
     console.log(i, oldItem, lastPos, newItem);
   }
 });
