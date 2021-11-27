@@ -75,6 +75,12 @@ section {
   position: relative;
   top: 8px;
 }
+.flag-link {
+  display: flex;
+  padding-top: 10px;
+}
+.flag-img {
+}
 .top-nav-line1 {
   color: #ccc;
   font-size: 12px;
@@ -146,8 +152,8 @@ section {
   transform: scale(0.7);
 }
 .accounts2 {
-  position: relative;
-  bottom: 7px;
+  /* position: relative;
+  bottom: 7px; */
 }
 .cart-num {
   position: relative;
